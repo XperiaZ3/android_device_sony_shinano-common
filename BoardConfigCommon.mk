@@ -51,6 +51,10 @@ BOARD_HARDWARE_CLASS := device/sony/shinano-common/cmhw
 # Dumpstate
 BOARD_LIB_DUMPSTATE := libdumpstate.sony
 
+# FM
+QCOM_FM_ENABLED := true
+AUDIO_FEATURE_ENABLED_FM := true
+
 # GPS
 TARGET_PROVIDES_GPS_LOC_API := true
 

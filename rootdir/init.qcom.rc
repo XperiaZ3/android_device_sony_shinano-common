@@ -575,6 +575,10 @@ service fm_dl /system/bin/sh /system/etc/init.qcom.fm.sh
     group system qcom_oncrpc
     disabled
     oneshot
+    
+    # FM
+    chmod 0644 /dev/radio0
+    chown fm_radio fm_radio /dev/radio0
 
 # Secure Config Transfer service
 service sct_service /system/bin/sct_service
