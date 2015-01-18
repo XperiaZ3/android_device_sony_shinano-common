@@ -20,6 +20,8 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/shinano-common/include
 # Platform
 BOARD_VENDOR_PLATFORM := shinano
 
+PRODUCT_GMS_CLIENTID_BASE := android-sonyericsson
+
 # Kernel information
 BOARD_KERNEL_BASE     := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
