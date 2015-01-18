@@ -167,6 +167,11 @@ on boot
 
     # create symlink for fb1 as HDMI
     symlink /dev/graphics/fb1 /dev/graphics/hdmi
+    
+    # Camera Recording
+    mkdir /dev/video
+    symlink /dev/video32 /dev/video/venus_dec
+    symlink /dev/video33 /dev/video/venus_enc
 
     # Change owner and group to get adopter/device ids from MHL driver
     chown system system /sys/class/mhl/sii8334/adopter_id
