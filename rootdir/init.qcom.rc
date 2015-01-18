@@ -428,7 +428,6 @@ service netmgrd /system/bin/netmgrd
 on property:ro.radio.noril=true
     stop ril-daemon
     stop netmgrd
-    exec /system/bin/sh /system/etc/init.qcom.ril.path.sh
 
 # start GNS/Sensor interface daemon
 service gsiff_daemon /system/bin/gsiff_daemon
