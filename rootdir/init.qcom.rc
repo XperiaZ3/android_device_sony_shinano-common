@@ -366,6 +366,11 @@ on post-fs-data
     # communicate with mpdecision and thermald
     mkdir /dev/socket/mpdecision 0770 system system
     chmod 2770 /dev/socket/mpdecision
+    
+    #QCOM prop
+    service mlog_qmi_service /system/bin/mlog_qmi_service
+    user root
+    class main
 
     # SONY: Camera
     mkdir /data/camera 0770 media camera
